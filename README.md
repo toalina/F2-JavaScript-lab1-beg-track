@@ -13,3 +13,55 @@ comments. Be sure to read everything. Run lab.js with `node lab1.js`.
 
 
 #### Resources and Collaborators
+
+MDN / W3School:
+- return
+- Math.random()
+- Math.floor()
+- split()
+- join()
+- array methods (push, pop, shift, unshift, splice)
+- closures (related to return statements)
+
+
+Stackoverflow:
+- replace item in array with javascript
+- grunt install issues
+
+
+#### Clare's Meerkat problem solution for comparison:
+
+var sentence1 = 'More food please.';
+var splitString = sentence1.split(" ");
+for (var i=0; i< splitString.length; i++){
+  splitString[i]= "chirp";
+}
+sentence1 = splitString.join([separator = ' '])
+
+
+
+var sentence2 = 'Come over here so you can scratch my belly.';
+var splitString2 = sentence2.split(' ');
+var j = splitString2.length;
+while (j--){
+  splitString2[j] = "chirp";
+};
+sentence2 = splitString2.join([separator = ' '])
+
+
+#### Alex's Meerkat problem solution for comparison:
+
+var sentence1 = 'More food please.';
+var sentence2 = 'Come over here so you can scratch my belly.';
+
+function meerkatSpeak(words) {
+  words = words.split(" ");
+  for (var i = 0; i < words.length; i++) {
+    words[i] = "chirp";
+  }
+  words = words.join(" ") + ".";
+  return words;
+}
+
+console.log(meerkatSpeak(sentence1));
+console.log(meerkatSpeak(sentence2));
