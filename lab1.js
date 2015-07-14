@@ -45,8 +45,8 @@ function assert(expression, failureMessage) {
  That will help later when you run jscs.
 */
 
-assert(1 === 1, '1 equals 1 - this assert will pass.');
-assert(1 === 2, 'this is an example of a failing assertion. 1 does not equal 2.');
+// assert(1 === 1, '1 equals 1 - this assert will pass.');
+// assert(1 === 2, 'this is an example of a failing assertion. 1 does not equal 2.');
 
 /* ===========================================================================
 ------------------Assertions (8 points total)---------------------------------
@@ -59,8 +59,8 @@ assert(1 === 2, 'this is an example of a failing assertion. 1 does not equal 2.'
  it failed.
 */
 
-assert("elephant" && "giraffe", 'Truthy elephant and truthy giraffe evalutes True.');
-assert(!"koala" || false, 'Not truthy koala is false. False or False evalutes False.');
+assert('elephant' && 'giraffe', 'Truthy elephant and truthy giraffe evalutes True.');
+assert(!'koala' || false, 'Not truthy koala is false. False or False evalutes False.');
 
 /* ========================================================================
 ----------------- Meerkats (20 points total)-------------------------------
@@ -88,20 +88,19 @@ function replace(sentence, seperator) {
 
   var arrayOfString = sentence.split(seperator);
 
-  for (var i=0; i < arrayOfString.length; i++) {
+  for (var i = 0; i < arrayOfString.length; i++) {
     arrayOfString.shift();
-    arrayOfString.push("chirp");
+    arrayOfString.push('chirp');
   }
 
-  var newString = arrayOfString.join(" ");
-  var chirp = newString + ".";
+  var newString = arrayOfString.join(' ');
+  var chirp = newString + '.';
   return chirp;
 }
 
 var x = replace(sentence1, space);
 var sentence1 = x;
 console.log(sentence1);
-
 
 // TODO: part #2: use a while or do-while loop to replace the words in sentence 2
 // with 'chirp' (10 points)
@@ -114,22 +113,20 @@ var counter = 1;
 function chirp(sentence, seperator) {
   var arrayOfString = sentence.split(seperator);
 
-  while (meerkat && counter <=9) {
+  while (meerkat && counter <= 9) {
     arrayOfString.shift();
-    arrayOfString.push("chirp");
+    arrayOfString.push('chirp');
     counter++;
   }
 
-  var newString = arrayOfString.join(" ");
-  var moreChirp = newString + ".";
+  var newString = arrayOfString.join(' ');
+  var moreChirp = newString + '.';
   return moreChirp;
 }
 
 var x = chirp(sentence2, space);
 var sentence2 = x;
 console.log(sentence2);
-
-
 
 // Leave these assertions as-is! If they pass, your code works.
 assert(sentence1 === 'chirp chirp chirp.', 'sentence 1 should have 3 chirps');
