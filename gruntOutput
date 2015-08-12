@@ -1,0 +1,7 @@
+Loading "jshint.js" tasks...[31mERROR[39m
+[31m>> [39mError: Cannot find module 'hooker'
+Loading "jscs.js" tasks...[31mERROR[39m
+[31m>> [39mError: Cannot find module 'vow'
+[33mWarning: Task "—-verbose" not found. Use --force to continue.[39m
+
+[31mAborted due to warnings.[39m
